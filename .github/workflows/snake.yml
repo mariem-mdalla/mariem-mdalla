@@ -25,13 +25,15 @@ jobs:
             dist/snake-light.svg
             dist/snake-dark.svg?palette=github-dark
 
-      - name: Commit snake files
+      - name: Move to assets
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           mkdir -p assets
           cp dist/snake-light.svg assets/snake-light.svg
           cp dist/snake-dark.svg assets/snake-dark.svg
-          git add assets/
-          git diff --cached --quiet || git commit -m "ci: update contribution snake"
-          git push
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "ci: update contribution snake"
+          branch: main
+          file_pattern: "assets/snake-light.svg assets/snake-dark.svg"
