@@ -20,6 +20,12 @@
 <br/>
 
 <p align="center">
+  <img src="lifecycle.svg" width="100%" alt="Design Build Secure Test Deploy" />
+</p>
+
+<br/>
+
+<p align="center">
   <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,tailwind&theme=dark" /><br/><br/>
   <img src="https://skillicons.dev/icons?i=nodejs,express,java,py,django&theme=dark" /><br/><br/>
   <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,supabase&theme=dark" /><br/><br/>
@@ -29,20 +35,10 @@
 <br/>
 
 <p align="center">
-  <a href="https://github.com/mariem-mdalla/-mochitask">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mariem-mdalla&repo=-mochitask&theme=tokyonight&hide_border=true&bg_color=0b0d14&title_color=8b7cff&icon_color=4fd1c5&text_color=e9ebf5" />
-  </a>
-  <a href="https://github.com/mariem-mdalla/tuncis-2026-website">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mariem-mdalla&repo=tuncis-2026-website&theme=tokyonight&hide_border=true&bg_color=0b0d14&title_color=8b7cff&icon_color=4fd1c5&text_color=e9ebf5" />
-  </a>
+  <img src="mochitask.svg" width="49%" alt="MochiTask" />&nbsp;<img src="tuncis.svg" width="49%" alt="TUNCIS 2026" />
 </p>
 <p align="center">
-  <a href="https://github.com/mariem-mdalla/vaultpass">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mariem-mdalla&repo=vaultpass&theme=tokyonight&hide_border=true&bg_color=0b0d14&title_color=8b7cff&icon_color=4fd1c5&text_color=e9ebf5" />
-  </a>
-  <a href="https://github.com/mariem-mdalla/-mochitask-backend">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mariem-mdalla&repo=-mochitask-backend&theme=tokyonight&hide_border=true&bg_color=0b0d14&title_color=8b7cff&icon_color=4fd1c5&text_color=e9ebf5" />
-  </a>
+  <img src="vaultpass.svg" width="49%" alt="VaultPass" />&nbsp;<img src="mochitask-api.svg" width="49%" alt="MochiTask API" />
 </p>
 
 <br/>
@@ -60,4 +56,10 @@
     <source media="(prefers-color-scheme: light)" srcset="assets/snake-light.svg" />
     <img alt="contribution snake" src="assets/snake-dark.svg" width="100%" />
   </picture>
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="footer.svg" width="100%" alt="" />
 </p>

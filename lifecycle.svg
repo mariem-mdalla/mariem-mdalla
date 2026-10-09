@@ -1,0 +1,14 @@
+<svg width="800" height="110" viewBox="0 0 800 110" xmlns="http://www.w3.org/2000/svg">
+<style>
+  .pu{fill-opacity:0;animation:pu 2.5s ease-out infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes pu{0%{fill-opacity:.5;transform:scale(1)}100%{fill-opacity:0;transform:scale(3)}}
+</style>
+<defs>
+  <linearGradient id="lg" x1="0" x2="1">
+    <stop offset="0" stop-color="#8b7cff"/>
+    <stop offset="1" stop-color="#4fd1c5"/>
+  </linearGradient>
+</defs>
+<line x1="98.0" y1="44" x2="237.0" y2="44" stroke="url(#lg)" stroke-width="1.5" stroke-opacity=".3"/><line x1="253.0" y1="44" x2="392.0" y2="44" stroke="url(#lg)" stroke-width="1.5" stroke-opacity=".3"/><line x1="408.0" y1="44" x2="547.0" y2="44" stroke="url(#lg)" stroke-width="1.5" stroke-opacity=".3"/><line x1="563.0" y1="44" x2="702.0" y2="44" stroke="url(#lg)" stroke-width="1.5" stroke-opacity=".3"/>
+<circle cx="90.0" cy="44" r="7" fill="#8b7cff" opacity=".9"/><circle cx="90.0" cy="44" r="7" fill="#8b7cff" class="pu" style="animation-delay:0.0s"/><text x="90.0" y="80" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" letter-spacing="2" fill="#98a0b8">DESIGN</text><circle cx="245.0" cy="44" r="7" fill="#252840" opacity=".9"/><circle cx="245.0" cy="44" r="7" fill="#252840" class="pu" style="animation-delay:0.5s"/><text x="245.0" y="80" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" letter-spacing="2" fill="#98a0b8">BUILD</text><circle cx="400.0" cy="44" r="7" fill="#4fd1c5" opacity=".9"/><circle cx="400.0" cy="44" r="7" fill="#4fd1c5" class="pu" style="animation-delay:1.0s"/><text x="400.0" y="80" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" letter-spacing="2" fill="#98a0b8">SECURE</text><circle cx="555.0" cy="44" r="7" fill="#252840" opacity=".9"/><circle cx="555.0" cy="44" r="7" fill="#252840" class="pu" style="animation-delay:1.5s"/><text x="555.0" y="80" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" letter-spacing="2" fill="#98a0b8">TEST</text><circle cx="710.0" cy="44" r="7" fill="#8b7cff" opacity=".9"/><circle cx="710.0" cy="44" r="7" fill="#8b7cff" class="pu" style="animation-delay:2.0s"/><text x="710.0" y="80" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" letter-spacing="2" fill="#98a0b8">DEPLOY</text>
+</svg>
