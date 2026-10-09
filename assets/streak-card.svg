@@ -1,0 +1,40 @@
+<svg width="490" height="265" viewBox="0 0 490 265" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <radialGradient id="g" cx="0.15" cy="0.85" r="0.65" gradientUnits="objectBoundingBox">
+    <stop offset="0" stop-color="#4fd1c5" stop-opacity=".38"/>
+    <stop offset="1" stop-color="#4fd1c5" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="c"><rect width="490" height="265" rx="16"/></clipPath>
+</defs>
+<g clip-path="url(#c)">
+  <rect width="490" height="265" fill="#0b0d14"/>
+  <rect width="490" height="265" fill="url(#g)"/>
+  <rect x="1" y="1" width="488" height="263" rx="15" fill="none" stroke="#ffffff" stroke-opacity=".07"/>
+  
+  <rect x="24" y="24" width="36" height="3" rx="2" fill="#4fd1c5"/>
+  <text x="24" y="72" font-family="'Segoe UI',sans-serif" font-size="17" font-weight="700" fill="#e9ebf5">Contribution Streak</text>
+
+  <!-- Dividers -->
+  <line x1="163" y1="105" x2="163" y2="235" stroke="#ffffff" stroke-opacity=".08"/>
+  <line x1="327" y1="105" x2="327" y2="235" stroke="#ffffff" stroke-opacity=".08"/>
+
+  <!-- Total Contributions -->
+  <text x="81" y="160" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="40" font-weight="800" fill="#e9ebf5">118</text>
+  <text x="81" y="188" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#98a0b8">Total Contributions</text>
+  <text x="81" y="210" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#98a0b8">2025-10-05 - Present</text>
+
+  <!-- Current Streak ring -->
+  <circle cx="245" cy="163" r="42" fill="none" stroke="#8b7cff" stroke-width="4" stroke-opacity=".25"/>
+  <circle cx="245" cy="163" r="42" fill="none" stroke="#8b7cff" stroke-width="4"
+          stroke-dasharray="264" stroke-dashoffset="256"
+          transform="rotate(-90 245 163)"/>
+  <text x="245" y="172" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="32" font-weight="800" fill="#e9ebf5">1</text>
+  <text x="245" y="200" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#4fd1c5" font-weight="600">Current Streak</text>
+  <text x="245" y="218" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#98a0b8">2026-10-09</text>
+
+  <!-- Longest Streak -->
+  <text x="409" y="160" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="40" font-weight="800" fill="#e9ebf5">3</text>
+  <text x="409" y="188" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#98a0b8">Longest Streak</text>
+
+</g>
+</svg>
