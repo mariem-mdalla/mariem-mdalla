@@ -22,20 +22,6 @@
 
 <br/>
 
-```javascript
-const mariem = {
-  role     : "Software Engineering Student",
-  school   : "Horizon School of Digital Technologies, Sousse",
-  focus    : ["Full-stack development", "Application security"],
-  building : "Web apps — end-to-end, with security designed in from day one",
-  community: ["IEEE member", "GDG Sousse organizer"],
-  speaks   : ["Arabic", "English", "French", "German (learning)"],
-  status   : "Building · Shipping · Learning",
-};
-```
-
-<br/>
-
 <p align="center">
   <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,tailwind&theme=dark" /><br/><br/>
   <img src="https://skillicons.dev/icons?i=nodejs,express,java,py,django&theme=dark" /><br/><br/>
@@ -73,4 +59,14 @@ const mariem = {
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=mariem-mdalla&theme=tokyo-night&hide_border=true&bg_color=0b0d14&color=8b7cff&line=4fd1c5&point=8b7cff&area=true&area_color=8b7cff" width="100%" />
+</p>
+
+<br/>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/snake.svg" />
+    <img alt="contribution snake" src="assets/snake-dark.svg" width="100%" />
+  </picture>
 </p>
