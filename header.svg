@@ -1,12 +1,12 @@
 <svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
     <style>
-        .title { font: bold 48px 'Courier New', monospace; fill: #00E676; opacity: 0; animation: fadeIn 1s forwards; }
-        .subtitle { font: 20px 'Courier New', monospace; fill: #C9D1D9; opacity: 0; animation: fadeIn 1s 0.5s forwards; }
-        .cmd { font: 16px 'Courier New', monospace; fill: #00E676; opacity: 0; animation: fadeIn 1s 1s forwards; }
-        .cursor { font: 16px 'Courier New', monospace; fill: #00E676; animation: blink 1s step-end infinite; }
+        .title { font: bold 48px 'Segoe UI', Ubuntu, sans-serif; fill: #8B5CF6; opacity: 0; animation: fadeIn 1s forwards; }
+        .subtitle { font: 20px 'Segoe UI', Ubuntu, sans-serif; fill: #C9D1D9; opacity: 0; animation: fadeIn 1s 0.5s forwards; }
+        .cmd { font: 16px 'Courier New', monospace; fill: #2DD4BF; opacity: 0; animation: fadeIn 1s 1s forwards; }
+        .cursor { font: 16px 'Courier New', monospace; fill: #2DD4BF; animation: blink 1s step-end infinite; }
         @keyframes fadeIn { to { opacity: 1; } }
         @keyframes blink { 50% { opacity: 0; } }
-        .box { stroke: #00E676; stroke-width: 2; fill: #0D1117; rx: 8px; }
+        .box { stroke: #30363d; stroke-width: 1; fill: #0D1117; rx: 8px; }
     </style>
     <rect x="5" y="5" width="790" height="190" class="box"/>
     <circle cx="25" cy="25" r="6" fill="#FF5F56"/>
@@ -14,6 +14,6 @@
     <circle cx="65" cy="25" r="6" fill="#27C93F"/>
     
     <text x="30" y="80" class="title">MARIEM MDALLA</text>
-    <text x="30" y="120" class="subtitle">Software Engineering Student · Full-Stack · AppSec</text>
-    <text x="30" y="160" class="cmd">$ tail -f /var/log/development.log <tspan class="cursor">_</tspan></text>
+    <text x="30" y="120" class="subtitle">Software Engineering Student · Full-Stack · AI</text>
+    <text x="30" y="160" class="cmd">$ initializing creative mode... <tspan class="cursor">_</tspan></text>
 </svg>

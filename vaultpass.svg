@@ -14,8 +14,8 @@
         <rect x="5" y="5" width="385" height="140" class="box">
             <animate attributeName="stroke" values="#30363d;#8B5CF6;#30363d" dur="5s" repeatCount="indefinite"/>
         </rect>
-        <text x="20" y="45" class="title">&gt; MochiTask</text>
-        <text x="20" y="85" class="desc">Full-stack Kanban productivity app</text>
-        <text x="20" y="125" class="stack">[React, TS, Tailwind, MongoDB]</text>
+        <text x="20" y="45" class="title">&gt; VaultPass</text>
+        <text x="20" y="85" class="desc">Secure password generator & manager</text>
+        <text x="20" y="125" class="stack">[JavaScript, HTML, CSS]</text>
     </g>
 </svg>

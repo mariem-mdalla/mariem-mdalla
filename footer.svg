@@ -1,17 +1,17 @@
 <svg width="800" height="100" viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg">
     <style>
-        .text { font: 16px 'Courier New', monospace; fill: #C9D1D9; }
-        .pulse { fill: #00E676; animation: pulse 2s infinite; }
+        .text { font: 16px 'Courier New', monospace; fill: #C9D1D9; letter-spacing: 2px; }
+        .pulse { fill: #8B5CF6; animation: pulse 2s infinite; }
         @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.3; }
-            100% { opacity: 1; }
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+            100% { opacity: 1; transform: scale(1); }
         }
     </style>
     <rect x="0" y="0" width="800" height="100" fill="none"/>
-    <line x1="100" y1="50" x2="300" y2="50" stroke="#00E676" stroke-width="1" opacity="0.3"/>
-    <circle cx="340" cy="50" r="5" class="pulse"/>
-    <text x="360" y="55" class="text">Building &amp; Shipping</text>
-    <circle cx="560" cy="50" r="5" class="pulse"/>
-    <line x1="600" y1="50" x2="700" y2="50" stroke="#00E676" stroke-width="1" opacity="0.3"/>
+    <line x1="100" y1="50" x2="280" y2="50" stroke="#8B5CF6" stroke-width="1" opacity="0.4"/>
+    <circle cx="310" cy="50" r="5" class="pulse" style="transform-origin: 310px 50px;"/>
+    <text x="330" y="55" class="text">DESIGN &amp; BUILD</text>
+    <circle cx="490" cy="50" r="5" class="pulse" style="transform-origin: 490px 50px;"/>
+    <line x1="520" y1="50" x2="700" y2="50" stroke="#8B5CF6" stroke-width="1" opacity="0.4"/>
 </svg>

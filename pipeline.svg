@@ -1,13 +1,14 @@
 <svg width="800" height="130" viewBox="0 0 800 130" xmlns="http://www.w3.org/2000/svg">
     <style>
-        .box { fill: none; stroke: #00E676; stroke-width: 1.5; stroke-dasharray: 4; animation: dash 20s linear infinite; }
-        .title { font: bold 16px 'Courier New', monospace; fill: #00E676; }
+        .box { fill: none; stroke: #8B5CF6; stroke-width: 1.5; stroke-dasharray: 4; animation: dash 20s linear infinite; }
+        .title { font: bold 16px 'Courier New', monospace; fill: #8B5CF6; }
         .items { font: 14px 'Courier New', monospace; fill: #C9D1D9; }
+        .accent { fill: #2DD4BF; font-weight: bold; }
         @keyframes dash { to { stroke-dashoffset: -1000; } }
     </style>
-    <rect x="5" y="5" width="790" height="120" class="box"/>
+    <rect x="5" y="5" width="790" height="120" class="box" rx="6"/>
     <text x="30" y="35" class="title">[+] SKILLS_PIPELINE</text>
-    <text x="30" y="65" class="items">&gt; FRONTEND : JS, TS, React, Next.js, Tailwind</text>
-    <text x="30" y="90" class="items">&gt; BACKEND  : Node.js, Express, Django, Java, Postgres, MongoDB</text>
-    <text x="30" y="115" class="items">&gt; SECURITY : JWT, RBAC, Docker, Helmet.js</text>
+    <text x="30" y="65" class="items">&gt; <tspan class="accent">FRONTEND</tspan> : JS, TS, React, Next.js, Tailwind</text>
+    <text x="30" y="90" class="items">&gt; <tspan class="accent">BACKEND </tspan> : Node.js, Express, Java, Postgres, MongoDB</text>
+    <text x="30" y="115" class="items">&gt; <tspan class="accent">TOOLS   </tspan> : Git, Docker, Vercel, Supabase</text>
 </svg>
