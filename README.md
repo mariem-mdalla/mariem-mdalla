@@ -44,8 +44,7 @@
 <br/>
 
 <p align="center">
-  <img height="175" src="https://github-readme-stats.vercel.app/api?username=mariem-mdalla&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0b0d14&title_color=8b7cff&icon_color=4fd1c5&text_color=e9ebf5&rank_icon=github" />
-  <img height="175" src="https://streak-stats.demolab.com?user=mariem-mdalla&theme=tokyonight&hide_border=true&background=0b0d14&ring=8b7cff&fire=8b7cff&currStreakLabel=4fd1c5" />
+  <img src="assets/stats-card.svg" width="49%" alt="GitHub Stats" />&nbsp;<img src="assets/streak-card.svg" width="49%" alt="Streak Stats" />
 </p>
 
 <br/>
