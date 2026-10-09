@@ -176,22 +176,22 @@ streak_inner = f"""
   <line x1="327" y1="105" x2="327" y2="235" stroke="{BORDER}" stroke-opacity=".08"/>
 
   <!-- Total Contributions -->
-  <text x="81" y="155" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="40" font-weight="800" fill="{TEXT}">{total_contrib}</text>
-  <text x="81" y="185" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="{MUTED}">Total Contributions</text>
-  <text x="81" y="208" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="{MUTED}">{fmt_date(first_contrib)} - Present</text>
+  <text x="81" y="150" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="38" font-weight="800" fill="{TEXT}">{total_contrib}</text>
+  <text x="81" y="195" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="{MUTED}">Total Contributions</text>
+  <text x="81" y="218" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="{MUTED}">{fmt_date(first_contrib)} - Present</text>
 
   <!-- Current Streak ring -->
-  <circle cx="245" cy="160" r="44" fill="none" stroke="{PRIMARY}" stroke-width="4" stroke-opacity=".2"/>
-  <circle cx="245" cy="160" r="44" fill="none" stroke="{PRIMARY}" stroke-width="4"
-          stroke-dasharray="276" stroke-dashoffset="{max(0, 276 - int(276 * min(current_streak / 30, 1)))}"
-          transform="rotate(-90 245 160)"/>
-  <text x="245" y="169" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="34" font-weight="800" fill="{TEXT}">{current_streak}</text>
-  <text x="245" y="198" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="{TEAL}" font-weight="600">Current Streak</text>
+  <circle cx="245" cy="142" r="38" fill="none" stroke="{PRIMARY}" stroke-width="4" stroke-opacity=".2"/>
+  <circle cx="245" cy="142" r="38" fill="none" stroke="{PRIMARY}" stroke-width="4"
+          stroke-dasharray="239" stroke-dashoffset="{max(0, 239 - int(239 * min(current_streak / 30, 1)))}"
+          transform="rotate(-90 245 142)"/>
+  <text x="245" y="153" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="30" font-weight="800" fill="{TEXT}">{current_streak}</text>
+  <text x="245" y="195" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="{TEAL}" font-weight="600">Current Streak</text>
   <text x="245" y="218" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="{MUTED}">{fmt_date(streak_start) if streak_start else fmt_date(today_str)}</text>
 
   <!-- Longest Streak -->
-  <text x="409" y="155" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="40" font-weight="800" fill="{TEXT}">{longest_streak}</text>
-  <text x="409" y="185" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="{MUTED}">Longest Streak</text>
+  <text x="409" y="150" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="38" font-weight="800" fill="{TEXT}">{longest_streak}</text>
+  <text x="409" y="195" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="{MUTED}">Longest Streak</text>
 """
 
 
