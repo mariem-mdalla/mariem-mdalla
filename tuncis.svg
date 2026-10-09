@@ -1,0 +1,22 @@
+<svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .box { fill: #0D1117; stroke: #30363d; stroke-width: 1; rx: 6px; }
+        .box:hover { stroke: #00E676; }
+        .title { font: bold 22px 'Courier New', monospace; fill: #00E676; }
+        .desc { font: 14px 'Courier New', monospace; fill: #C9D1D9; }
+        .stack { font: 12px 'Courier New', monospace; fill: #00E676; opacity: 0.8; }
+        .card-anim { animation: float 3s ease-in-out infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+    </style>
+    <g class="card-anim">
+        <rect x="5" y="5" width="390" height="140" class="box">
+            <animate attributeName="stroke" values="#30363d;#00E676;#30363d" dur="4s" repeatCount="indefinite"/>
+        </rect>
+        <text x="20" y="45" class="title">&gt; TUNCIS 2026</text>
+        <text x="20" y="85" class="desc">AI conference platform</text>
+        <text x="20" y="125" class="stack">[Vercel, Neon Postgres, Drizzle]</text>
+    </g>
+</svg>
