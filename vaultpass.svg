@@ -1,10 +1,10 @@
 <svg width="395" height="150" viewBox="0 0 395 150" xmlns="http://www.w3.org/2000/svg">
     <style>
-        .box { fill: #0D1117; stroke: #30363d; stroke-width: 1; rx: 6px; transition: stroke 0.3s; }
-        .title { font: bold 22px 'Segoe UI', Ubuntu, sans-serif; fill: #8B5CF6; }
-        .desc { font: 14px 'Segoe UI', Ubuntu, sans-serif; fill: #C9D1D9; }
-        .stack { font: 12px 'Courier New', monospace; fill: #2DD4BF; opacity: 0.9; }
-        .card-anim { animation: float 3s ease-in-out infinite; }
+        .box { fill: #0b0d14; stroke: #1e293b; stroke-width: 1; rx: 12px; transition: stroke 0.3s; }
+        .title { font: bold 22px 'Segoe UI', Ubuntu, sans-serif; fill: #8b7cff; }
+        .desc { font: 14px 'Segoe UI', Ubuntu, sans-serif; fill: #e9ebf5; }
+        .stack { font: 12px 'Courier New', monospace; fill: #4fd1c5; opacity: 0.9; }
+        .card-anim { animation: float 4s ease-in-out infinite; }
         @keyframes float {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-4px); }
@@ -12,10 +12,10 @@
     </style>
     <g class="card-anim">
         <rect x="5" y="5" width="385" height="140" class="box">
-            <animate attributeName="stroke" values="#30363d;#8B5CF6;#30363d" dur="5s" repeatCount="indefinite"/>
+            <animate attributeName="stroke" values="#1e293b;#8b7cff;#1e293b" dur="5s" repeatCount="indefinite"/>
         </rect>
-        <text x="20" y="45" class="title">&gt; VaultPass</text>
-        <text x="20" y="85" class="desc">Secure password generator & manager</text>
-        <text x="20" y="125" class="stack">[JavaScript, HTML, CSS]</text>
+        <text x="25" y="45" class="title">&gt; VaultPass</text>
+        <text x="25" y="85" class="desc">Secure password generator &amp; manager</text>
+        <text x="25" y="125" class="stack">[JavaScript, HTML, CSS]</text>
     </g>
 </svg>
