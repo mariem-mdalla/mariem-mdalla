@@ -17,20 +17,21 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: Platane/snk@v3
+      - name: Generate snake animation
+        uses: Platane/snk@v3
         with:
           github_user_name: mariem-mdalla
           outputs: |
-            dist/snake.svg
+            dist/snake-light.svg
             dist/snake-dark.svg?palette=github-dark
 
-      - name: Commit snake to main branch
+      - name: Commit snake files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           mkdir -p assets
-          cp dist/snake.svg assets/snake.svg
+          cp dist/snake-light.svg assets/snake-light.svg
           cp dist/snake-dark.svg assets/snake-dark.svg
-          git add assets/snake.svg assets/snake-dark.svg
+          git add assets/
           git diff --cached --quiet || git commit -m "ci: update contribution snake"
           git push
