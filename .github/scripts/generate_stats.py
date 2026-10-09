@@ -102,6 +102,23 @@ if current_streak > 0:
     if active:
         streak_start = active[-current_streak][0] if current_streak <= len(active) else active[0][0]
 
+# first contribution date (for "Since" label)
+first_contrib = all_days[0][0] if all_days else today_str
+
+
+def fmt_date(iso):
+    """Convert '2026-10-09' -> 'Oct 9, 2026'"""
+    if not iso:
+        return ''
+    try:
+        d = datetime.date.fromisoformat(iso)
+        months = ['Jan','Feb','Mar','Apr','May','Jun',
+                  'Jul','Aug','Sep','Oct','Nov','Dec']
+        return f"{months[d.month-1]} {d.day}"
+    except Exception:
+        return iso
+
+
 
 # ── SVG helpers ───────────────────────────────────────────────────────────────
 def card_wrap(w, h, glow_color, glow_cx, glow_cy, inner):
@@ -159,23 +176,24 @@ streak_inner = f"""
   <line x1="327" y1="105" x2="327" y2="235" stroke="{BORDER}" stroke-opacity=".08"/>
 
   <!-- Total Contributions -->
-  <text x="81" y="160" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="40" font-weight="800" fill="{TEXT}">{total_contrib}</text>
-  <text x="81" y="188" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="{MUTED}">Total Contributions</text>
-  <text x="81" y="210" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="{MUTED}">{all_days[0][0] if all_days else ''} - Present</text>
+  <text x="81" y="155" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="40" font-weight="800" fill="{TEXT}">{total_contrib}</text>
+  <text x="81" y="185" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="{MUTED}">Total Contributions</text>
+  <text x="81" y="208" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="{MUTED}">{fmt_date(first_contrib)} - Present</text>
 
   <!-- Current Streak ring -->
-  <circle cx="245" cy="163" r="42" fill="none" stroke="{PRIMARY}" stroke-width="4" stroke-opacity=".25"/>
-  <circle cx="245" cy="163" r="42" fill="none" stroke="{PRIMARY}" stroke-width="4"
-          stroke-dasharray="264" stroke-dashoffset="{max(0, 264 - int(264 * min(current_streak/30, 1)))}"
-          transform="rotate(-90 245 163)"/>
-  <text x="245" y="172" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="32" font-weight="800" fill="{TEXT}">{current_streak}</text>
-  <text x="245" y="200" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="{TEAL}" font-weight="600">Current Streak</text>
-  <text x="245" y="218" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="{MUTED}">{streak_start}</text>
+  <circle cx="245" cy="160" r="44" fill="none" stroke="{PRIMARY}" stroke-width="4" stroke-opacity=".2"/>
+  <circle cx="245" cy="160" r="44" fill="none" stroke="{PRIMARY}" stroke-width="4"
+          stroke-dasharray="276" stroke-dashoffset="{max(0, 276 - int(276 * min(current_streak / 30, 1)))}"
+          transform="rotate(-90 245 160)"/>
+  <text x="245" y="169" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="34" font-weight="800" fill="{TEXT}">{current_streak}</text>
+  <text x="245" y="198" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="{TEAL}" font-weight="600">Current Streak</text>
+  <text x="245" y="218" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="{MUTED}">{fmt_date(streak_start) if streak_start else fmt_date(today_str)}</text>
 
   <!-- Longest Streak -->
-  <text x="409" y="160" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="40" font-weight="800" fill="{TEXT}">{longest_streak}</text>
-  <text x="409" y="188" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="{MUTED}">Longest Streak</text>
+  <text x="409" y="155" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="40" font-weight="800" fill="{TEXT}">{longest_streak}</text>
+  <text x="409" y="185" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="{MUTED}">Longest Streak</text>
 """
+
 
 streak_svg = card_wrap(490, 265, TEAL, '0.15', '0.85', streak_inner)
 
