@@ -38,7 +38,7 @@
   <img src="mochitask.svg" width="49%" alt="MochiTask" />&nbsp;<img src="tuncis.svg" width="49%" alt="TUNCIS 2026" />
 </p>
 <p align="center">
-  <img src="vaultpass.svg" width="49%" alt="VaultPass" />&nbsp;<img src="mochitask-api.svg" width="49%" alt="MochiTask API" />
+  <img src="vaultpass.svg" width="49%" alt="VaultPass" />
 </p>
 
 <br/>
